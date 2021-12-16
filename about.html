@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Huddle</title>
+    
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+ 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <script src="sign.js"></script>
+    
+    <script src="appearance.js"></script>
+    <script src="group.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <script>
+        var result=checklogstatus();
+    </script>
+</head>
+
+<body>
+    <div id="header">
+        
+        <div style="float:left">
+            <img src="favicon.ico" width="30px" height="30px">
+        </div>
+        <div id="header-title-container" class="header-item">
+            <a href="home.html"><h2>Huddle</h2></a>
+            
+        </div>        
+        <div id="appearance-toggle" class="header-item">
+            <div id="darklight-button">◐</div>
+            <div class="drop-down">
+                <div id="lightmode-button" onclick="lightmode()">light</div>
+                <div id="darkmode-button" onclick="darkmode()">dark</div>
+            </div>
+        </div>
+    </div>
+
+  <style>
+      #appearance-toggle
+      {
+          margin-right: 50px;
+      }
+      #main
+      {
+        margin-top: 50px;
+      }
+      h2
+      {
+          text-align: center;
+      }
+      h3
+      {
+          text-align: center;
+      }
+      h4
+      {
+          text-align: center;
+      }
+  </style>  
+    <div id="main">
+        <h2>WTL mini project</h2>
+        <h3>Student Helper website</h3> 
+        <br><br>
+        <h3>This is a project made by Third year MIT-WPU students from panel G </h3><br>
+        <h4>under guidance of</h4>
+        <h4>Prof. Pradnya Kulkarni</h4>
+        <br><br>
+        <h3>This project is made by</h3>
+        <h4>Devang Jagdale</h4>
+        <br><br>
+        <h3>Technologies involved</h3>
+        <h4>HTML</h4>
+        <h4>CSS</h4>
+        <h4>Javascript</h4>
+        <h4>Firebase</h4>
+    </div>
+</body>
+
+</html>

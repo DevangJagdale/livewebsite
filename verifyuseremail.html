@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="sign.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+
+    <link rel="shortcut icon" href="favicon.ico" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huddle</title>
+    <script>
+      fireconn();
+      firebase.auth().signOut().then(() => {
+        console.log("logout");
+      }).catch((error) => {
+        console.log(error.code);
+              console.log(error.message);
+      });
+     </script>
+</head>
+<body>
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="index.html">
+    <p> 
+          <H1>
+              <b style="color: rgb(0, 132, 255);">H</b>
+              <b>u d d l e</b>
+          </H1>
+    </p>
+  </a>
+</nav>
+
+<style>
+    .navbar
+    {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }    
+    .loader {
+      border: 16px solid #f3f3f3; /* Light grey */
+      border-top: 16px solid #3498db; /* Blue */
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      animation: spin 2s linear infinite;
+      margin-left: 280px;
+      margin-top: 10px;
+      visibility: hidden;
+    }
+    
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+</style>
+
+<div class="card text-center">
+    <div id="qw" class="card-header">
+      <h1>Note</h1>
+    </div>
+    <div class="card-body">
+  
+        <h2>Please verify yourself. We have send email to your registered email Id. After that you can login here.</h2>
+    </div>
+  </div>
+
+  <style>
+      .card
+      {
+          margin-top: 100px;
+          margin-left: 400px;
+          margin-right: 400px;
+      }
+  </style>
+
+
+
+</body>
+</html>
